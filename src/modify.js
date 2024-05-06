@@ -7,7 +7,7 @@ arrayy.push(words[i].toUpperCase())
    }
    return arrayy
 };
-
+/** FEEDBACK: Rewrite this code so that you are destructuring.  */
 const destructureCoordinates = (coordinates) => {
   const x = coordinates[0];
   const y = coordinates[1];
