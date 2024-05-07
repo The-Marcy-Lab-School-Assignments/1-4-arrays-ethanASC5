@@ -1,27 +1,20 @@
 /** FEEDBACK: Overall great job getting most of these test cases to pass. Next steps would be to keep spacing consistent throughout your code. */
 const addToFrontOrBack = (arr, value, isFront) => {
 if (isFront === true ){ 
-   
-
 arr.unshift(value)   
 } 
-
 else { arr.push(value)
 
 }
 };
 
 const reverseString = (string) => {
-
     let reversedString = ""
-     
     for (let i = string.length - 1; i >= 0; i--) {
         reversedString += string[i]
     }
-    
     return reversedString
-    
-    
+        
       } ;
 ///////////////////////////////
 
@@ -64,8 +57,13 @@ return arrayy
 const arr1 =  [5.9, -7.9, 12.9]
 console.log(roundAllNumsDown(arr1))
 /** FEEDBACK: For this problem, you will need to iterate through the matrix, and add all of the second numbers into a new array. Consider using .map() but you do not have to! */
-const getAllYCoordinates = () => {
-};
+
+
+
+function getAllYCoordinates(arrOfCoords) {
+  return arrOfCoords.map(coord => coord[1]);
+}
+
 
 module.exports = {
   addToFrontOrBack,
